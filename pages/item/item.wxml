@@ -1,0 +1,19 @@
+<view class="successwin">
+  <view class='pcontainer'>
+    <view class='tipwrapper'>
+      <image src='../../images/2@2x.png'></image>
+      <p>
+        <text class="tips1">扫码成功</text>
+      </p>
+      <view>
+        <text class='tips2'>点击进入页面领取奖品</text>
+      </view>
+    </view>
+    <view>
+      <button class='btnget'>领取</button>
+    </view>
+  </view>
+  <view class='footercloser'>
+      <image src='../../images/close@2x.png'></image>
+  </view>
+</view>

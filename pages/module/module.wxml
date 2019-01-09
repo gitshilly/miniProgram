@@ -1,0 +1,10 @@
+<!--pages/module/module.wxml-->
+<view class="detailscontainer">
+    <view class="list-item" data-bid="{{liveData.id}}"        bindtap="toDetailPage">
+    <view class="portait"><image class="portaitimg" src='{{liveData.LiveImg}}'></image></view>
+    <view class="desc">
+      <view>{{liveData.LiveIntro}}</view>
+      <view class='fans'><view>粉丝：<text>{{liveData.FansNum}}</text></view><view>访问量：<text>{{liveData.VisitAddrNum}}</text></view></view>
+    </view>
+  </view>
+</view>

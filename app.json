@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/live/live",
+    "pages/module/module",
+    "pages/item/item",
+    "pages/item2/item2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微信接口功能演示",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "position": "bottom",
+    "selectedColor": "green",
+    "list": [
+      {
+        "pagePath": "pages/item/item",
+        "text": "模块1",
+        "iconPath": "images/user_icon.png",
+        "selectedIconPath": "images/user_icon_over.png"
+      },{
+        "pagePath": "pages/item2/item2",
+        "text": "模块2",
+        "iconPath": "images/user_icon.png",
+        "selectedIconPath": "images/user_icon_over.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index_icon.png",
+        "selectedIconPath": "images/index_icon_over.png"
+      },
+      {
+        "pagePath": "pages/live/live",
+        "text": "直播",
+        "iconPath": "images/icon_stockmarket.png",
+        "selectedIconPath": "images/icon_stockmarket_over.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "images/user_icon.png",
+        "selectedIconPath": "images/user_icon_over.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,73 @@
+<import src="../common/tickettemplate.wxml"/>
+<view class="ticketcontainer">
+<view class='navwrapper'>
+  <view class="nav">
+    <view class="nav-i {{currentItem==1?'active':''}}" bindtap="switchnav">
+      <text>未使用</text>
+    </view>
+    <view class="nav-i {{currentItem==2?'active':''}}" bindtap="switchnav">
+      <text>已兑换</text>
+    </view>
+    <view class="nav-i {{currentItem==3?'active':''}}" bindtap="switchnav">
+      <text>已过期</text>
+    </view>
+  </view>
+</view>
+<scroll-view scroll-y="true" class="tcontainer">
+  <!-- <view class="t-list" wx:if="{{totalRecord > 0}}">
+      <block wx:for="{{pageData}}">
+        <template is="live-item" data="{{item}}"></template>
+      </block>
+    </view> -->
+    <view class="t-item free">
+    <view class='iner'>
+      <icon class='icon-money'>￥</icon>
+      <view class='t-item-flex'>
+        <view class="t-item-type">免费</view>
+        <view class="t-item-desc">
+          <view class='t-item-desc-tit'>百威酒兑换券</view>
+          <view class='t-item-desc-date'>有效期：2018-10-17 23:59:59</view>
+          <view class='t-item-desc-rule'><button class="btnuse">去使用</button><text class='text' bindtap='openPopRules'>使用规则</text><text class='trianle-down' bindtap='openPopRules'></text> </view>
+        </view>
+      </view>
+    </view>
+  </view>
+    <view class="t-item free">
+    <view class='iner'>
+      <icon class='icon-money'>￥</icon>
+      <view class='t-item-flex'>
+        <view class="t-item-type">已兑</view>
+        <view class="t-item-desc">
+          <view class='t-item-desc-tit'>百威酒兑换券</view>
+          <view class='t-item-desc-date'>有效期：2018-10-17 23:59:59</view>
+          <view class='t-item-desc-rule'><button class="btnuse">去使用</button><text class='text' bindtap='openPopRules'>使用规则</text><text class='trianle-down' bindtap='openPopRules'></text> </view>
+        </view>
+      </view>
+    </view>
+  </view>
+    <view class="t-item">
+    <view class='iner'>
+      <icon class='icon-money'>￥</icon>
+      <view class='t-item-flex'>
+        <view class="t-item-type">过期</view>
+        <view class="t-item-desc">
+          <view class='t-item-desc-tit'>百威酒兑换券</view>
+          <view class='t-item-desc-date'>有效期：2018-10-17 23:59:59</view>
+          <view class='t-item-desc-rule'><button class="btnuse">去使用</button><text class='text' bindtap='openPopRules'>使用规则</text><text class='trianle-down' bindtap='openPopRules'></text> </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<view class='poprulesfixed' id="PopRules">
+  <view class='poprules'>
+    <view class='iner'>
+      <view class='poprules-h'>使用规则详细</view>
+      <view class='poprules-c'>使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细使用规则详细</view>
+      <view class='poprules-f'>
+        <image src='../../images/close@2x.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

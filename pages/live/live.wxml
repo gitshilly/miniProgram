@@ -1,0 +1,34 @@
+<import src="../common/itemtemplate.wxml"/>
+<view class='navwrapper'>
+  <swiper class='navadv' indicator-dots="true" autoplay="true" duration="1000" bindchange="listenSwiper">
+    <swiper-item>
+      <image src='../../images/advimg.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../../images/advimg.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../../images/advimg.png'></image>
+    </swiper-item>
+  </swiper>
+  <view class="nav">
+    <view class="nav-i {{ishotList?'active':''}}" bindtap="switchnav">
+      热门
+    </view>
+    <view class="nav-i  {{!ishotList?'active':''}}" bindtap="switchnav">
+      推荐
+    </view>
+  </view>
+</view>
+<view class='placeholder'></view>
+<scroll-view scroll-y="true" class="livecontainer">
+  <view class="live-list" wx:if="{{totalRecord > 0}}">
+      <block wx:for="{{pageData}}">
+        <template is="live-item" data="{{item}}"></template>
+        <!-- <view class="list-item" data-bid="{{item.roomId}}" bindtap="toDetailPage">
+          <view class="portait"><image class="portaitimg" src='{{item.liveAvatar}}'></image></view>
+          <view class="desc">{{util.formatTime(item.modifyTime)}}{{item.liveIntro}}</view>
+        </view> -->
+      </block>
+    </view>
+</scroll-view>

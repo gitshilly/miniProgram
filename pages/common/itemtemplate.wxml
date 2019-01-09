@@ -1,0 +1,6 @@
+<template name="live-item">
+  <view class="list-item" data-bid="{{item.roomId}}"        bindtap="toDetailPage">
+    <view class="portait"><image class="portaitimg" src='{{item.liveAvatar}}'></image></view>
+    <view class="desc">{{util.formatTime(item.modifyTime)}}{{item.liveIntro}}</view>
+  </view>
+</template>

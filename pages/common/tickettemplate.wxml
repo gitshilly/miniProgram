@@ -1,0 +1,10 @@
+<template name="live-item">
+  <view class="t-item free">
+    <view class="t-item-type"></view>
+    <view class="t-item-desc">
+      <view><text>百威酒兑换券</text></view>
+      <view><text>有效期：2018：10-17 23:59:59</text></view>
+      <view><button class="btnuse">去使用</button>使用规则 </view>
+    </view>
+  </view>
+</template>
